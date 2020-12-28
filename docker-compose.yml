@@ -1,0 +1,14 @@
+version: '3'
+services:
+  nuxt:
+    container_name: nuxt
+    build:
+      context: ./docker
+    ports:
+      - 3000:3000
+    working_dir: /src/${APP_NAME}
+    command: npm run dev
+    volumes:
+      - ./docker/src:/src
+    tty: true
+    stdin_open: true
