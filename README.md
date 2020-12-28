@@ -11,6 +11,9 @@ define APP_NAME in .env
 $ docker-compose run --rm -w /src nuxt npx create-nuxt-app <project-name>
 ```
 
+# chage listen host to '0.0.0.0'
+https://ja.nuxtjs.org/faq/host-port/
+
 # start server
 
 ```
